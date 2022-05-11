@@ -2,10 +2,11 @@ name: test
 
 on: 
   push: 
-    branch: master
+    branches: [master]
 
-job:
+jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
