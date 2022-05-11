@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitest -w",
+    "test": "vitest -w",
     "coverage": "vitest run --coverage"
   },
   "repository": {
