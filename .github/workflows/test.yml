@@ -16,8 +16,11 @@ jobs:
           node-version: 16.x
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
+      - name: Install global dependencies
         run: npm i -g pnpm
+
+      - name: Install dependencies
+        run: pnpm i
 
       - name: Run tests
         run: pnpm run test
